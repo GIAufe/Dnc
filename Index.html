@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Numeric Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Delta Numeric Club</h1>
+    </header>
 
+    <main>
+        <h2>Register to Join the Club</h2>
+
+        <form id="registrationForm" action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <input type="hidden" name="_subject" value="New Delta Numeric Club Registration">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="thank-you.html"> <!-- Redirect after submission -->
+            <input type="hidden" name="_autoresponse" value="Thank you for registering with Delta Numeric Club! We’ll contact you soon.">
+
+            <label for="regName">Full Name:</label>
+            <input type="text" id="regName" name="name" required>
+
+            <label for="regEmail">Email:</label>
+            <input type="email" id="regEmail" name="email" required>
+
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" name="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="registerFeedback"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
