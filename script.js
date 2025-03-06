@@ -14,3 +14,9 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         feedback.style.color = "red";
     }
 });
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    setTimeout(function() {
+        window.location.href = "thank-you.html"; // Redirects after 1 second
+    }, 1000);
+});
